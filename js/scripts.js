@@ -2,6 +2,7 @@ var url = 'http://api.icndb.com/jokes/random';
 var button = document.getElementById('get-joke');
 var paragraph = document.getElementById('joke');
 
+getJoke(); // This line is responsible for the quote showing instantly after page load (before clicking on the button below)
 button.addEventListener('click', function(){
   getJoke();
 });
